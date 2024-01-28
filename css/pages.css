@@ -1,0 +1,256 @@
+/*========About Page Start=======*/
+.About_section {
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about_texting {
+    background: var(--white-color);
+    border-radius: 100px;
+    display: inline-block;
+    padding: 4px 12px;
+
+}
+
+.home {
+    color: var(--green);
+}
+
+.home:hover {
+    color: var(--purple);
+}
+
+.text_item {
+    list-style: none;
+    margin: 0 3px;
+    font-weight: 500;
+
+}
+
+/* Introduction Section */
+.introducing {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.intro_img {
+    border-radius: 20px;
+}
+
+.intro_image {
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 30px;
+}
+
+.custom_btn_explore {
+    background: transparent;
+    border: 2px solid #e9eaeb;
+    color: var(--purple);
+    padding: 13px;
+    border-radius: 100px;
+    transition: all .5s ease;
+}
+
+.custom_btn_explore:hover {
+    background: var(--purple);
+    color: var(--white-color);
+}
+
+.custom_link_contact {
+    color: var(--p-color);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    padding-bottom: 2px;
+}
+
+.custom_link_contact::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    position: absolute;
+    left: auto;
+    right: 0;
+    z-index: -1;
+    transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+    background: currentColor;
+}
+
+.custom_link_contact:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.custom_link_contact:hover {
+    color: var(--green) !important;
+}
+
+.custom_link_contact:hover::after {
+    background: var(--custom-btn-bg-color);
+}
+
+/*========About Page End=======*/
+
+
+/*========Contact Page Start=======*/
+.contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.google-map {
+    border-radius: 30px;
+    filter: grayscale(100%);
+    border: none;
+}
+
+.contact_info_head {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact_info:nth-child(even) {
+    background-color: #f0f8ff;
+    border-radius: 100px;
+}
+
+.icon {
+    color: var(--green);
+    font-size: 48px;
+    margin-right: 20px;
+}
+
+.contact_title {
+    display: block;
+    color: var(--purple);
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.linkedin_link {
+    color: var(--p-color);
+}
+
+.contact_info {
+    padding: 20px 30px;
+}
+
+.container_form {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main {
+    width: 100%;
+    height: 550px;
+    max-width: 750px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1000;
+}
+
+
+.heading {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: var(--heading);
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}
+
+.social_media {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
+.sec_heading {
+    font-size: 20px;
+    padding: 0 10px;
+
+    color: var(--purple);
+}
+
+.third_heading {
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding-top: 10px;
+    color: var(--purple);
+}
+
+.custom-form .form-control {
+    background-color: #f0f8ff;
+    margin-bottom: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.custom-form .form-control {
+    background-color: #f0f8ff;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    box-shadow: none;
+    color: var(--p-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    outline: none;
+}
+
+.custom-form .form-control:focus {
+    border: 2px solid var(--green);
+    background-color: var(--white-color);
+}
+
+.form-btn {
+    width: 200px;
+    background-color: var(--green);
+    color: var(--white-color);
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+.form-btn:hover {
+    background-color: var(--custom-btn-bg-color)
+}
+
+/*========Contact Page End=======*/
